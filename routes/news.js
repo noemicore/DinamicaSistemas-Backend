@@ -9,10 +9,10 @@ router.get('/', async (req, res) => {
   try {
     const response = await axios.get('https://newsapi.org/v2/everything', {
       params: {
-        q: 'dinámica de sistemas OR system dynamics OR tecnología OR technology',
+        q: 'tecnología OR avances tecnológicos OR innovación tecnológica OR inteligencia artificial OR ciencia de datos OR computación OR software OR hardware OR robótica OR internet OR informática OR tecnología médica OR tecnología educativa OR tecnología ambiental OR blockchain OR ciberseguridad OR big data OR cloud computing OR realidad virtual OR realidad aumentada OR IoT OR impresión 3D OR machine learning OR deep learning OR simulación OR simulation',
         language: 'es',
         sortBy: 'publishedAt',
-        pageSize: 10,
+        pageSize: 5,
         apiKey: NEWS_API_KEY
       }
     });
