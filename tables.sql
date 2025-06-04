@@ -21,15 +21,6 @@ CREATE TABLE IF NOT EXISTS events (
   speaker VARCHAR(255),
   category_id INTEGER REFERENCES event_categories(id)
 );
-
--- News
-CREATE TABLE IF NOT EXISTS news (
-  id SERIAL PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  date DATE NOT NULL,
-  description TEXT
-);
-
 -- Books
 CREATE TABLE IF NOT EXISTS books (
   id SERIAL PRIMARY KEY,
